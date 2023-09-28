@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    max-width: 100%;
+}
+nav #div1{
+    line-height: 0;
+    
+}
+#nav-main{
+    background-color: #79AC78;
+    max-width:100% ;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    
+}
+#nav-main a{
+
+    color: white;
+    text-decoration: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 0 3% 0 3%;
+    padding-top: 30rem;
+    font-size: larger;
+}
+
+
+.content {
+  padding: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#logo img{
+    margin-top: -8.6%;
+}
+#logo h1{
+    padding-left: px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* image scroller */
+
+.gal-text{
+    text-align: center;
+    margin: 3% 0px 0 3%;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+.slide-wrap{
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top:3% ;
+    
+}
+.slide{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 2%;
+    
+}
+.slide img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity ease 250ms;
+}
+
+.slide::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.slideshow {
+    animation: slide 20s infinite;
+    
+}
+.slideshow::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider-nav a:active{
+    background-color: rgb(117, 114, 111);
+    animation: slide 1s none;
+}
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
