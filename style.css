@@ -149,5 +149,7 @@ nav #div1{
     .slide-wrap{
         max-width: 48rem;
     }
-    
+    #nav-main a{
+        font-size: 6px;
+    }
 }
