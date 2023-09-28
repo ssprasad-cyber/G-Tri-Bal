@@ -38,6 +38,7 @@ nav #div1{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .sticky + .content {
@@ -45,7 +46,7 @@ nav #div1{
 }
 
 #logo{
-    display: flex;
+    display: none;
     justify-content: center;
     align-content: center;
 }
@@ -71,13 +72,9 @@ nav #div1{
     max-width: 50%;
     margin: 0 auto;
     margin-top:3% ;
-    
+    z-index: 60;
 }
-@media screen and (max-width:480px){
-    .slide-wrap{
-        max-width: 48rem;
-    }
-}
+
 .slide{
     display: flex;
     aspect-ratio: 16/9;
@@ -147,4 +144,10 @@ nav #div1{
     100% {
         transform: translateX(0%);
     }
+}
+@media screen and (max-width:480px){
+    .slide-wrap{
+        max-width: 48rem;
+    }
+    
 }
