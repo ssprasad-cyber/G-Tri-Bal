@@ -73,6 +73,11 @@ nav #div1{
     margin-top:3% ;
     
 }
+@media screen and (max-width:480px){
+    .slide-wrap{
+        max-width: 48rem;
+    }
+}
 .slide{
     display: flex;
     aspect-ratio: 16/9;
